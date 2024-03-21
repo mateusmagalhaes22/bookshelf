@@ -1,13 +1,13 @@
-package com.mateus.bookshelf;
+package com.mateus.BookShelf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BookshelfApplication {
+public class BookShelfApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BookshelfApplication.class, args);
+		SpringApplication.run(BookShelfApplication.class, args);
 	}
 
 }

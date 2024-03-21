@@ -1,10 +1,10 @@
-package com.mateus.bookshelf;
+package com.mateus.BookShelf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BookshelfApplicationTests {
+class BookShelfApplicationTests {
 
 	@Test
 	void contextLoads() {

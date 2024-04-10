@@ -1,21 +1,23 @@
-package com.mateus.bookshelf.books;
+package com.mateus.BookShelf.books;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Document
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 public class Book {
 	@Id
-	private String id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 	private String name;
 	private String author;
 	private double price;
